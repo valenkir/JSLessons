@@ -15,9 +15,9 @@
 }*/
 
 let browser = "Chrome";
-if (browser=='Edge'){
+if (browser == 'Edge') {
     alert( "You've got Edge!" );
-} else if (brower == 'Chrome' || brower == 'Firefox' || brower == 'Safari' || brower == 'Opera'){
+} else if (brower == 'Chrome' || brower == 'Firefox' || brower == 'Safari' || brower == 'Opera') {
     alert( 'Okay we support these browsers too' );
 } else {
     alert( 'We hope that this page looks ok!' );

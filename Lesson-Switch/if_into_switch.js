@@ -21,5 +21,5 @@ switch (a){
         break;
     case 2:
     case 3:
-        alert('2,3');
+        alert('2, 3');
 }
