@@ -6,7 +6,7 @@ function pow(x, n){
         }
         return result;
     } else {
-        return "Wront value!";
+        return "Wrong value!";
     }
 }
 
