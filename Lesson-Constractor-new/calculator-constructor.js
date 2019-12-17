@@ -5,16 +5,16 @@ function Calculator() {
         secondValue: 0,
         
         read() {
-            firstValue = +prompt("Enter the first value", 0);
-            secondValue = +prompt("Enter the second value", 0);
+            this.firstValue = +prompt("Enter the first value", 0);
+            this.secondValue = +prompt("Enter the second value", 0);
         },
 
         sum() {
-            return firstValue + secondValue;
+            return this.firstValue + this.secondValue;
         },
 
         mul() {
-            return firstValue * secondValue;
+            return this.firstValue * this.secondValue;
         },
     } 
 }
