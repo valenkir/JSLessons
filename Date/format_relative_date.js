@@ -1,12 +1,15 @@
 function formatDate(date) {
-    let currentDate = new Date();
-    if (((currentDate - date) / 1000) < 1) {
+
+    const currentDate = new Date();
+    const timePassedSinceDate = currentDate - date;
+
+    if ((timePassedSinceDate / 1000) < 1) {
         return "right now";
-    } else if (((currentDate - date) / 60000) < 1) {
-        let seconds = (currentDate - date) / 1000;
+    } else if ((timePassedSinceDate / 60000) < 1) {
+        let seconds = timePassedSinceDate / 1000;
         return seconds + " sec. ago";
-    } else if (((currentDate - date) / 3.6e+6) < 1) {
-        let minutes = (currentDate - date) / 60000;
+    } else if ((timePassedSinceDate / 3.6e+6) < 1) {
+        let minutes = timePassedSinceDate / 60000;
         return minutes + " min. ago";
     } else {
         let year = date.getFullYear().toString().slice(2);
@@ -19,7 +22,7 @@ function formatDate(date) {
         ]
         let result = dateArr.map((item) => {
             item = item.toString();
-            if(item.length == 1){
+            if (item.length == 1){
                 item = '0' + item; 
             }
             return item;

@@ -1,4 +1,4 @@
-let values = ["Hare", "Krishna", "Hare", "Krishna",
+const values = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
 ];
   

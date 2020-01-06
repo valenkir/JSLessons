@@ -37,7 +37,7 @@ function Calculator() {
     };
 }
 
-let powerCalc = new Calculator;
+let powerCalc = new Calculator();
 powerCalc.addMethod("*", (a, b) => a * b);
 powerCalc.addMethod("/", (a, b) => a / b);
 powerCalc.addMethod("**", (a, b) => a ** b);

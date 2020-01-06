@@ -6,18 +6,18 @@ function sumToLoop (n) {
     return result;
 }
 
-function sumToRec (n) {
-    if (n == 1) {
-        return n;
+function sumToRec (number) {
+    if (number == 1) {
+        return number;
     }
-    return n + sumToRec(n - 1);
+    return number + sumToRec(number - 1);
 
 }
 
-function sumToProgression (n) {
-    let a1 = 1;
-    let d = 1;
-    let an = a1 + d * (n - 1);
-    return (n * (a1 + an)) / 2;
+function sumToProgression (number) {
+    const initialTerm = 1;
+    const difference = 1;
+    let nthTerm = initialTerm + difference * (number - 1);
+    return (number * (initialTerm + nthTerm)) / 2;
 }
 

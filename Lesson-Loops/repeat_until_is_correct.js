@@ -1,12 +1,12 @@
 let number;
 
-do{
+do {
     number = prompt("Enter the number greater than 100", 0);
-    if (number == null || number == '') {
-        alert("Cancelled!");
+    if (number == null) {
+        alert ("Cancelled!");
         break;
-    } else if(number <= 100) {
-        alert("Wrong number!");
+    } else {
+        alert ("Wrong number!");
         continue;
     }
-} while(number <= 100);
+} while (number <= 100);

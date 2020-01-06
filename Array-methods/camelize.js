@@ -1,16 +1,22 @@
 function camelize(str) {
-    let strArr = str.split("-");
-    let upperCaseLetter;
 
-    for (i = 1; i < strArr.length; i++) {
+	if (str && str.trim().length != 0) {
         
-        if (strArr == "") {
-            continue;
-        }
+    	let strArr = str.split("-");
+    	let upperCaseLetter;
+
+    	for (i = 1; i < strArr.length; i++) {
         
-        upperCaseLetter = strArr[i][0].toUpperCase();
-        strArr[i] = upperCaseLetter + strArr[i].slice(1);
-    }
+        	if (strArr == "") {
+            	continue;
+        	}
+        
+        	upperCaseLetter = strArr[i][0].toUpperCase();
+        	strArr[i] = upperCaseLetter + strArr[i].slice(1);
+    	}
     
-    return strArr.join("");
+    	return strArr.join("");
+   }
+   
+   return -1;
 }

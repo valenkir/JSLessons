@@ -1,6 +1,6 @@
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 29 };
+const john = { name: "John", age: 25 };
+const pete = { name: "Pete", age: 30 };
+const mary = { name: "Mary", age: 29 };
 
 let arr = [ john, pete, mary ];
 

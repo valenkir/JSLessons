@@ -1,7 +1,3 @@
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
-
-alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
-
 function aclean(arr) {
 
     let cleared = [];
@@ -24,19 +20,15 @@ function aclean(arr) {
 
 function isAnagram(str, clearedArr) {
 
-    let isAnagram;
+    let isAnagram = false;
 
     for (item of clearedArr) {
-
-        item = item.toLowerCase();
 
         if (item.length != str.length) {
             continue;
         } else {
             for (letter of str) {
-                letter = letter.toLowerCase();
-
-                if (item.includes(letter)) {
+                if (item.toLowerCase().includes(letter.toLowerCase())) {
                     isAnagram = true;
                 } else {
                     isAnagram = false;
@@ -49,3 +41,5 @@ function isAnagram(str, clearedArr) {
     return isAnagram;
 }
 
+const arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"

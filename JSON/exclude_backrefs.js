@@ -1,8 +1,8 @@
-let room = {
+const room = {
     number: 23
   };
   
-  let meetup = {
+  const meetup = {
     title: "Conference",
     occupiedBy: [{name: "John"}, {name: "Alice"}],
     place: room
@@ -13,13 +13,10 @@ let room = {
   meetup.self = meetup;
   
   alert( JSON.stringify(meetup, function replacer(key, value) {
-      if (value == 'meetup'){
+      if (value == meetup && key != '') {
           return undefined;
-      } else if (key == 'occupiedBy' && value == 'meetup') {
-          return undefined;
-      } else {
-          return value;
-      }
+      } 
+      return value;
   }));
   
   /* result should be:

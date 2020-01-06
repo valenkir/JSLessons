@@ -18,5 +18,7 @@ function getWeekDay(date){
             return "FR";
         case 6:
             return "SA";
+        default:
+            return "You've probably entered an invalid value. Please, try again."
     }
 }

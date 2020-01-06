@@ -1,4 +1,4 @@
-let list = {
+const list = {
     value: 1,
     next: {
       value: 2,
@@ -18,7 +18,7 @@ let list = {
         alert(list.value);
         return;
       } else {
-          printList(list.next);
+          printListRec(list.next);
       }
   }
   

@@ -18,7 +18,7 @@ function random(min, max) {
 }
 
 function getNumber(min, max){
-    number = Math.random();
+    let number = Math.random();
     while (!((number >= min) && (number <= max))) {
         number *= 10;
         if(number > max){
